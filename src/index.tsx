@@ -5,6 +5,7 @@ import { Router, Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
 import { configureStore } from './store';
 import { App } from './containers/App';
+import Test from './containers/Test';
 
 const store = configureStore();
 const history = createBrowserHistory();
@@ -13,7 +14,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route path="/" component={App} />
+        <Route exact path="/" component={App} />
+        <Route path="/test" component={Test} />
       </Switch>
     </Router>
   </Provider>,
