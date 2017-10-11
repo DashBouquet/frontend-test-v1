@@ -1,13 +1,16 @@
 import { createStore, applyMiddleware, Store } from 'redux';
-import { logger } from '../middleware';
+import createSagaMiddleware from 'redux-saga';
+import rootSaga from '../middleware/sagas';
 import rootReducer, { RootState } from '../reducers';
+
+const sagaMiddleware = createSagaMiddleware();
 
 export function configureStore(initialState?: RootState): Store<RootState> {
   const create = window.devToolsExtension
     ? window.devToolsExtension()(createStore)
     : createStore;
 
-  const createStoreWithMiddleware = applyMiddleware(logger)(create);
+  const createStoreWithMiddleware = applyMiddleware(sagaMiddleware)(create);
 
   const store = createStoreWithMiddleware(rootReducer, initialState) as Store<RootState>;
 
@@ -17,6 +20,6 @@ export function configureStore(initialState?: RootState): Store<RootState> {
       store.replaceReducer(nextReducer);
     });
   }
-
+  sagaMiddleware.run(rootSaga);
   return store;
 }
