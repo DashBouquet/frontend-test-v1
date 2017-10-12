@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as TodoActions from '../../actions/todos';
+import * as TodoActions from '../../core/actions';
 import * as style from './style.css';
 import { connect } from 'react-redux';
 import { Footer } from '../Footer';

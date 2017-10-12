@@ -1,0 +1,12 @@
+.header {
+  background: transparent;
+}
+
+.container {
+  padding: 100px;
+  background: #FFF;
+}
+
+.table thead th {
+  background: transparent;
+}

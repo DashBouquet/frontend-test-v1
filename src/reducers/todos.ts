@@ -1,4 +1,4 @@
-import { handleActions } from 'redux-actions';
+import { createReducer } from '../utils/createReducer';
 import * as Actions from '../constants/actions';
 
 const initialState: TodoStoreState = [{
@@ -7,7 +7,7 @@ const initialState: TodoStoreState = [{
   completed: false
 }];
 
-export default handleActions<TodoStoreState, TodoItemData>({
+export default createReducer({
   [Actions.ADD_TODO]: (state, action) => {
     return [{
       id: state.reduce((maxId, todo) => Math.max(todo.id, maxId), -1) + 1,

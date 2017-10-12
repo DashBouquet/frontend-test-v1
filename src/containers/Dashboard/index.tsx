@@ -49,7 +49,7 @@ export default class Dashboard extends React.Component {
                                 <li key="1" className={style.nav__link}>Bookings</li>
                                 <li key="2" className={style.nav__link}>Allocation</li>
                                 <li key="3" className={style.nav__link}>Reporting</li>
-                                <Link to="/" className={style.nav__link}>Contacts</Link>
+                                <Link to="/contacts" className={style.nav__link}>Contacts</Link>
                                 <li key="5" className={style.nav__link}>Settings</li>
                                 <li key="6" className={style.nav__link}>Finansces</li>
                             </ul>
