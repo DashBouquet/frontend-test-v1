@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const { Header, Content } = Layout;
 import ContactsList from '../containers/ContactsList';
 import ContactsAlphabeticSorter from '../containers/ContactsAlphabeticSorter';
+import ContactsTypeFilter from '../containers/ContactsTypeFilter';
 
 export const ContactsLayout: any = (props: any) => {
   return (
@@ -14,6 +15,7 @@ export const ContactsLayout: any = (props: any) => {
       </Header>
       <Content>
         <ContactsAlphabeticSorter />
+        <ContactsTypeFilter />
         <ContactsList />
       </Content>
     </Layout>

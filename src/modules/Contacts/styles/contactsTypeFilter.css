@@ -1,0 +1,17 @@
+.container {
+  margin-top: 20px;
+}
+.content {
+  background: #FFF;
+  display: flex;
+  justify-content: flex-start;
+}
+.button {
+  border: none !important;
+  box-shadow: none !important;
+  font-weight: bold;
+}
+
+.button::before {
+  background-color: transparent !important;
+}
