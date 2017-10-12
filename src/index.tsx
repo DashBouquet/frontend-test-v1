@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { Router, Route, Switch } from 'react-router';
 import { createBrowserHistory } from 'history';
 import { configureStore } from './store';
-import { App } from './containers/App';
 import Dashboard from './containers/Dashboard';
 import Contacts from './modules/Contacts';
 import Contact from './modules/Contact';
@@ -20,8 +19,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/dashboard" component={Dashboard} />
+        <Route exact path="/" component={Dashboard} />
         <Route path="/contacts" component={Contacts} />
         <Route path="/contact/:id" component={Contact} />
       </Switch>
