@@ -7,7 +7,6 @@
 - [x] [Redux](https://github.com/reactjs/redux) 3.7
 - [x] [React Router](https://github.com/ReactTraining/react-router) 4.1
 - [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
-- [x] [TodoMVC example](http://todomvc.com)
 
 ### Build tools
 
@@ -26,21 +25,17 @@
 ## Setup
 
 ```
-$ npm install
+$ yarn install
 ```
 
 ## Running
 
 ```
-$ npm start
+$ yarn start
 ```
 
 ## Build
 
 ```
-$ npm run build
+$ yarn build
 ```
-
-# License
-
-MIT

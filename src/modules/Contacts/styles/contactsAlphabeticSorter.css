@@ -1,0 +1,10 @@
+.header {
+  background: #FFF;
+  font-weight: bold;
+  padding: 0;
+}
+.content {
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+}

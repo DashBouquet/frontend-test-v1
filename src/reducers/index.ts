@@ -1,10 +1,15 @@
-import { combineReducers, Reducer } from 'redux';
-import todos from './todos';
+import { combineReducers } from 'redux';
+import contacts from './contacts';
+import contact from './contact';
+import contactList from '../modules/Contacts/reducers/contactsList';
 
 export interface RootState {
-  todos: TodoStoreState;
+  contacts: ContactsStoreState;
+  contact: ContactStoreState;
 }
 
 export default combineReducers<RootState>({
-  todos
+  contacts,
+  contact,
+  contactList
 });
