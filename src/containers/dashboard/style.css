@@ -1,70 +1,7 @@
-.trigger {
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0 16px;
-  cursor: pointer;
-  transition: color .3s;
-  vertical-align: middle;
-}
-
-.header {
-  background: #fff;
-  padding: 0;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-content: center;
-  height: 100%;
-}
-
-  .nav__link {
-    height: 100%;
-    text-transform: uppercase;
-    padding: 0 20px;
-    color: inherit;
+ .content {
+    margin-top: 50px;
+    padding: 24px;
+    background: #fff;
+    min-height: 280px;
+    display: flex;
   }
-
-  .nav__link:hover {
-    background: #606060;
-    color: white;
-    cursor: pointer;
-  }
-
-.icons {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-}
-
-  .icons__icon {
-    border: 1px solid #606060;
-    border-radius: 50%;
-    padding: 5px;
-    cursor: pointer;
-    margin: 0 10px;
-  }
-
-  .icons__icon:hover {
-    background: #606060;
-    color: white;
-  }
-
-  .icons__user {
-    text-transform: uppercase;
-    margin-right: 30px;
-  }
-
-  .icons__circle {
-    min-width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    border: 1px solid #606060;
-    background: rgba(0, 0, 0, 0.3);
-    margin: 0 10px 0 20px;
-  }
-

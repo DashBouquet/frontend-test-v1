@@ -1,0 +1,21 @@
+.trigger {
+    color: #b0b4b6;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: color .3s;
+    vertical-align: middle;
+}
+
+.star {
+    color: #b0b4b6;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.trigger:hover {
+    background: transparent;
+    color: #0f8ee9;
+}

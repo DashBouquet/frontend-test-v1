@@ -16,14 +16,15 @@ const history = createBrowserHistory();
 initialize(store);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={history}>
-      <Switch>
-        <Route exact path="/" component={Dashboard} />
-        <Route path="/contacts" component={Contacts} />
-        <Route path="/contact/:id" component={Contact} />
-      </Switch>
-    </Router>
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <Router history={history}>
+            <Dashboard>
+                <Switch>
+                  <Route path="/contacts" component={Contacts} />
+                  <Route path="/contact/:id" component={Contact} />
+                </Switch>
+            </Dashboard>
+        </Router>
+    </Provider>,
+    document.getElementById('root')
 );
