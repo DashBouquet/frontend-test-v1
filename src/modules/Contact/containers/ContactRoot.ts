@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { compose, lifecycle, branch, renderNothing } from 'recompose';
 import { prop } from 'ramda';
-import { getContact } from '../../../core/actions'
+import { getContact } from '../../../core/actions';
 import { stateMapper } from '../selectors';
 import { ContactLayout } from '../components/ContactLayout';
 

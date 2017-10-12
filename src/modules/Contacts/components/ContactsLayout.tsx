@@ -2,8 +2,9 @@ import * as React from 'react';
 import * as style from '../styles/contactsLayout.css';
 import { Layout } from 'antd';
 import { Link } from 'react-router-dom';
-import ContactsList from '../containers/ContactsList'
 const { Header, Content } = Layout;
+import ContactsList from '../containers/ContactsList';
+import ContactsAlphabeticSorter from '../containers/ContactsAlphabeticSorter';
 
 export const ContactsLayout: any = (props: any) => {
   return (
@@ -12,6 +13,7 @@ export const ContactsLayout: any = (props: any) => {
         Contact List
       </Header>
       <Content>
+        <ContactsAlphabeticSorter />
         <ContactsList />
       </Content>
     </Layout>

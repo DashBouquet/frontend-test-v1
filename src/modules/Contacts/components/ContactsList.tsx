@@ -6,7 +6,7 @@ const { Column } = Table;
 
 export const ContactsList: any = (props: any) => {
   return (
-    <Table className={style.table} dataSource={props.contacts.data}>
+    <Table className={style.table} dataSource={props.contactList}>
       <Column
         dataIndex="contactName"
         key="contactName"

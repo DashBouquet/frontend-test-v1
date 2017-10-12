@@ -1,5 +1,7 @@
 export const SET_INITIAL_DATA = 'SET_INITIAL_DATA';
 export const LOAD_INITIAL_DATA = 'LOAD_INITIAL_DATA';
 
+export const UPDATE_CONTACTS = 'UPDATE_CONTACTS';
+
 export const GET_CONTACT = 'GET_CONTACT';
 export const SET_CONTACT = 'SET_CONTACT';

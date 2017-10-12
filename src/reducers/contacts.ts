@@ -1,5 +1,5 @@
 import { createReducer } from '../utils/createReducer';
-import { setInitialData } from '../core/actions';
+import { setInitialData, updateContacts } from '../core/actions';
 
 const initialState: ContactsStoreState = null;
 

@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import contacts from './contacts';
 import contact from './contact';
+import contactList from '../modules/Contacts/reducers/contactsList';
 
 export interface RootState {
   contacts: ContactsStoreState;
@@ -9,5 +10,6 @@ export interface RootState {
 
 export default combineReducers<RootState>({
   contacts,
-  contact
+  contact,
+  contactList
 });
