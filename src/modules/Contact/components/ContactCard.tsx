@@ -2,6 +2,16 @@ import * as React from 'react';
 import { Row, Col, Button, Avatar, Card } from 'antd';
 import * as style from '../styles/contactCard.css';
 
+import { BarChart, XAxis, ResponsiveContainer, Bar } from 'recharts';
+
+const data = [
+  {name: 'Mon', uv: 4000, pv: 2400, amt: 2400},
+  {name: 'Tues', uv: 3000, pv: 1398, amt: 2210},
+  {name: 'Wed', uv: 2000, pv: 9800, amt: 2290},
+  {name: 'Thurs', uv: 2780, pv: 3908, amt: 2000},
+  {name: 'Fri', uv: 1890, pv: 4800, amt: 2181},
+];
+
 export const ContactCard: any = (props: any) => {
   return (
     <div className={style.container}>
@@ -95,6 +105,12 @@ export const ContactCard: any = (props: any) => {
               </Col>
               <Col span={12} />
             </Row>
+            <ResponsiveContainer width='100%' height={200}>
+              <BarChart data={data}>
+                <Bar dataKey='uv' fill='lightGray'/>
+                <XAxis dataKey="name" />
+              </BarChart>
+            </ResponsiveContainer>
           </Card>
         </Col>
         <Col span={12} className={style.payment}>
