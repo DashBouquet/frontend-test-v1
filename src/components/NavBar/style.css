@@ -1,0 +1,167 @@
+.header {
+    background: #fff;
+    padding: 0;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+}
+
+.nav__link {
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 0 20px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    transition: color .3s;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    color: #0f8ee9;
+
+}
+
+.icons {
+    display: flex;
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+.icons__icon {
+    border: 1px solid #606060;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all .3s;
+}
+
+.icons__icon:hover {
+    background: #606060;
+    color: white;
+}
+
+.icons__user {
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.icons__circle {
+    min-width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid #606060;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 0 10px 0 20px;
+}
+
+.icons__span {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .nav__link {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .icons__icon {
+        margin: 0 10px;
+    }
+
+    .icons__user {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        width: 305px;
+        height: 90px;
+        justify-content: flex-end;
+    }
+
+    .nav__link {
+        font-size: 14px;
+        height: 50%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav__link:not(:first-of-type) {
+        width: 100px;
+    }
+
+    .icons__circle {
+        margin: 0 5px 0 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        width: 274px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+
+    .nav__link:not(:first-of-type) {
+        width: 90px;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        width: 120px;
+    }
+
+    .icons__span {
+        width: 120px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icons__span:first-of-type {
+        order: 2;
+    }
+
+    .icons__user {
+        font-size: 14px;
+    }
+
+    .icons__icon {
+        padding: 3px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .icons {
+        flex-wrap: nowrap;
+        width: 312px;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .icons__user {
+        margin-right: 20px;
+    }
+
+}
