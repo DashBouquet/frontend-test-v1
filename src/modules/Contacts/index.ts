@@ -1,3 +1,3 @@
-import Contacts from './containers/ContactsList';
+import Contacts from './containers/ContactsRoot';
 
 export default Contacts;
