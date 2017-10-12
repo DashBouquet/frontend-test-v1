@@ -39,7 +39,6 @@ export default class Dashboard extends React.Component {
                 <Layout>
                     <Header className={style.header}>
                         <nav>
-
                             <ul className={style.nav}>
                                 <Icon
                                     className={`${style.trigger} ${style.nav__link}`}
@@ -55,13 +54,15 @@ export default class Dashboard extends React.Component {
                             </ul>
                         </nav>
                         <div className={style.icons}>
-                                    <span>
-                                        <Icon className={style.icons__icon} type="retweet" />
-                                        <Icon className={style.icons__icon} type="mail" />
-                                        <Icon className={style.icons__icon} type="setting" />
-                                    </span>
-                            <span className={style.icons__circle}></span>
-                            <p className={style.icons__user}>Robert</p>
+                            <span className={style.icons__span}>
+                                <Icon className={style.icons__icon} type="retweet" />
+                                <Icon className={style.icons__icon} type="mail" />
+                                <Icon className={style.icons__icon} type="setting" />
+                            </span>
+                            <span className={style.icons__span}>
+                                <span className={style.icons__circle}></span>
+                                <p className={style.icons__user}>Robert</p>
+                            </span>
                         </div>
                     </Header>
                     <Content style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
