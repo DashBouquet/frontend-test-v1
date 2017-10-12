@@ -20,7 +20,7 @@ ReactDOM.render(
         <Router history={history}>
             <Dashboard>
                 <Switch>
-                  <Route path="/contacts" component={Contacts} />
+                  <Route exact path="/" component={Contacts} />
                   <Route path="/contact/:id" component={Contact} />
                 </Switch>
             </Dashboard>

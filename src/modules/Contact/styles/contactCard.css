@@ -32,6 +32,11 @@
 }
 .payment__card {
   background: #ECECEC;
+  height: 100%;
+}
+.cardSubtitle {
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 .bottom {
   padding: 45px 0;

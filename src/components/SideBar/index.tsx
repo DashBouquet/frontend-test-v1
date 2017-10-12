@@ -5,12 +5,12 @@ import { compose, withHandlers, withState } from 'recompose';
 
 import * as style from './style.css';
 
-const SideBar = ({onToggleClick, collapsed}) => (
+const SideBar: any = ({onToggleClick, collapsed}) => (
   <Sider
     trigger={null}
     collapsible
     collapsed={collapsed}
-    style={{background: '#d8d8d8', }}
+    style={{background: '#d8d8d8'}}
   >
     <Icon
       className={style.trigger}

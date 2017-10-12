@@ -72,9 +72,29 @@ export const ContactCard: any = (props: any) => {
       <Row className={style.payment}>
         <Col span={12} className={style.payment}>
           <Card title="Invoices owed to you" bordered={false} className={style.payment__card}>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
+            <Row>
+              <Col span={12}>
+                <Col span={12}>
+                  Draft invoices
+                </Col>
+                <Col span={12}>
+                  0
+                </Col>
+                <Col span={12}>
+                 Owed
+                </Col>
+                <Col span={12}>
+                  3
+                </Col>
+                <Col span={12}>
+                  Overdue
+                </Col>
+                <Col span={12}>
+                  6
+                </Col>
+              </Col>
+              <Col span={12} />
+            </Row>
           </Card>
         </Col>
         <Col span={12} className={style.payment}>
@@ -84,9 +104,38 @@ export const ContactCard: any = (props: any) => {
             className={style.payment__card}
             extra={<Button>Edit</Button>}>
 
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
+            <p className={style.cardSubtitle}>
+              Scored card details
+            </p>
+            <Row>
+              <Col span={12}>
+                <Col span={12}>
+                  Card number
+                </Col>
+                <Col span={12}>
+                  {props.paymentDetails.cardNumber}
+                </Col>
+                <Col span={12}>
+                  Security code
+                </Col>
+                <Col span={12}>
+                  ***
+                </Col>
+                <Col span={12}>
+                  Start from
+                </Col>
+                <Col span={12}>
+                  01/14
+                </Col>
+                <Col span={12}>
+                  Exp date
+                </Col>
+                <Col span={12}>
+                  01/18
+                </Col>
+              </Col>
+              <Col span={12} />
+            </Row>
           </Card>
         </Col>
       </Row>

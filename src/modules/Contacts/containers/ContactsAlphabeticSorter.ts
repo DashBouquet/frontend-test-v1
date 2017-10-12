@@ -3,7 +3,7 @@ import { compose, withProps, withState, withHandlers, lifecycle } from 'recompos
 import { prop, range, filter } from 'ramda';
 import { alphabeticFilter } from "../../../filters/contactsAlphabeticFilter";
 import { stateMapper } from '../selectors';
-import { updateContacts } from '../../../core/actions'
+import { updateContacts } from '../../../core/actions';
 import { ContactsAlphabeticSorter } from '../components/ContactsAlphabeticSorter';
 
 export default compose(
