@@ -8,7 +8,6 @@ const { Column } = Table;
 export const ContactsList: any = (props: any) => {
   return (
     <Layout className={style.container}>
-      {console.log(props)}
       <Header className={style.header}>
         Contact List
       </Header>

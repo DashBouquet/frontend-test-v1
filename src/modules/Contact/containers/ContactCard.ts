@@ -9,9 +9,8 @@ export default compose(
   connect(stateMapper),
   lifecycle({
     componentDidMount() {
-
-      console.log(this.props.match);
-      this.props.dispatch(getContact({id: this.props.match.params.id}))
+      const { dispatch, match }:any = this.props;
+      dispatch(getContact({id: match.params.id}))
     }
   })
 )(ContactCard);
