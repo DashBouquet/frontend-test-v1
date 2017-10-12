@@ -4,7 +4,7 @@ import { setInitialData } from '../actions';
 
 export
 function* fetchInitialData() {
-  const Contacts = yield fetchContacts();
+  const Contacts = yield fetchContacts({'page[size]': 100});
 
   try {
     yield put(setInitialData({ Contacts }));
