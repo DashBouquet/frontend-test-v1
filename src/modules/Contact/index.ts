@@ -1,3 +1,3 @@
-import Contact from './containers/ContactCard';
+import Contact from './containers/ContactRoot';
 
 export default Contact;
