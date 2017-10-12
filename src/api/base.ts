@@ -20,7 +20,6 @@ const request: any = new Object({
       .keys(params)
       .map((key) => `${key}=${encodeURIComponent(params[key])}`)
       .join("&");
-    console.log(paramsString);
     return fetch(config.baseUrl + apiEndpoint + ( paramsString ? `?${paramsString}` : ""))
       .then(JSONResponse);
   }
