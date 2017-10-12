@@ -1,12 +1,3 @@
-.trigger {
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0 16px;
-  cursor: pointer;
-  transition: color .3s;
-  vertical-align: middle;
-}
-
 .header {
   background: #fff;
   padding: 0;
@@ -36,6 +27,20 @@
     color: white;
     cursor: pointer;
   }
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: color .3s;
+  vertical-align: middle;
+}
+
+.trigger:hover {
+  background: transparent;
+  color: #0f8ee9;
+}
 
 .icons {
   display: flex;
@@ -73,6 +78,14 @@
   .icons__span {
     display: flex;
     align-items: center;
+  }
+
+  .content {
+    margin: 24px;
+    padding: 24px;
+    background: #fff;
+    min-height: 280px;
+    display: flex;
   }
 
 @media screen and (max-width: 1280px) {
@@ -165,5 +178,9 @@
     justify-content: center;
     margin: 10px 0;
   }
+
+    .icons__user {
+      margin-right: 20px;
+    }
 
 }

@@ -12,14 +12,15 @@ const store = configureStore();
 const history = createBrowserHistory();
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={history}>
-      <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/test" component={Test} />
-        <Route path="/dashboard" component={Dashboard} />
-      </Switch>
-    </Router>
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <Router history={history}>
+            <Dashboard>
+                <Switch>
+                    <Route exact path="/" component={App} />
+                    <Route path="/test" component={Test} />
+                </Switch>
+            </Dashboard>
+        </Router>
+    </Provider>,
+    document.getElementById('root')
 );
